@@ -8,14 +8,21 @@ header {
 .headerLinks {
    /* border: 3px solid red; */
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     margin: 15px 0px 0px 0px;
 }
 
-.headerLinks a{
+.headerLinks a {
     text-decoration: none;
     color: black;
+}
+
+.headerLinks a:hover {
+    background: #DEE9D3;
+    /* color: chocolate; */
+    color: darkblue;
 }
 
 .sipLogo {
