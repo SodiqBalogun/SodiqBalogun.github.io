@@ -46,3 +46,20 @@ header {
     justify-content: space-around;
     margin: 8px 0px 0px 0px;
 }
+
+.section1Left {
+    width: 50%;
+    height: 100%;
+    padding: 16300px 0px 0px 0px;
+    background: #DEE9D3;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 99%
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
