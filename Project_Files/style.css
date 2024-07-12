@@ -47,11 +47,40 @@ header {
     margin: 8px 0px 0px 0px;
 }
 
-.section1Left {
-    width: 50%;
+.section1 {
+    width: 90%;
     height: 100%;
-    padding: 16300px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     background: #DEE9D3;
+    display: grid;
+    border: 3px solid navy;
+}
+
+.section1BothParts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourInfo1_2 {
+    width: 50%;
+    justify-content: left;
+    /*border: 3px solid red;*/
+}
+
+.hourInfo1_2 p {
+    font-size: 30px;
+}
+
+.hourInfo1_2 h2 {
+    font-size: 30px;
+}
+
+.locationInfo2_2 {
+    width: 50%;
+    justify-content: right;
+    /*border: 3px solid blue;*/
+    padding: 40px 0px 0px 0px;
 }
 
 .sticky {
