@@ -3,6 +3,8 @@ header {
     background: white;
     justify-content: space-between;
    /* border: 3px solid blueviolet; */
+    width: 100%;
+    z-index: 1000;
 }
 
 .headerLinks {
@@ -53,9 +55,14 @@ header {
     width: 99%
 }
 
-.sticky + .content {
-    padding-top: 102px;
+#header-placeholder {
+    height: 0; /* Initially set to 0, will be adjusted by JavaScript */
+    display: none;
 }
+
+/*.sticky + .content {*/
+/*    padding-top: 102px;*/
+/*}*/
 
 .section1 {
     width: 100%;
@@ -99,7 +106,7 @@ header {
 }
 
 .section2 {
-    background: black;
+    background: #854e4e;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
     border: 3px solid black;
@@ -145,4 +152,11 @@ header {
 
 .reservationInfo2_2 a {
     text-decoration: none;
+}
+
+.section3 {
+    background: #DEE9D3;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border: 3px solid #DEE9D3;
 }
