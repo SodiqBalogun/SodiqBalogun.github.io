@@ -109,7 +109,7 @@ header {
     background: #854e4e;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
-    border: 3px solid black;
+    border-top: 3px solid black;
 }
 
 .section2 h1 {
@@ -123,6 +123,7 @@ header {
 .reservationInfo1_2 {
     width: 50%;
     background: white;
+    padding: 25px 0px 25px 0px;
 }
 
 .reservationInfo1_2 h2 {
@@ -132,6 +133,7 @@ header {
 .reservationInfo2_2 {
     width: 50%;
     background: #DEE9D3;
+    padding: 25px 0px 25px 0px;
 }
 
 .reservationInfo2_2 h2 {
@@ -158,5 +160,40 @@ header {
     background: #DEE9D3;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
+    /*border: 3px solid #DEE9D3;*/
+    display: flex;
+}
+
+.section3Part1_2 {
+    width: 50%;
+    background: white;
+}
+
+.section3Part2_2 {
+    width: 50%;
+    background: white;
     border: 3px solid #DEE9D3;
+}
+
+.section3Part2_2 h1 {
+    color: #854e4e;
+    padding: 50px 0px 0px 0px;
+}
+
+.section3Part2_2 h2 {
+    color: midnightblue;
+    padding: 50px 0px 0px 0px;
+}
+
+.bottomBar {
+    background: grey;
+}
+
+.topBothParts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.topBotPart {
+    justify-content: center;
 }
