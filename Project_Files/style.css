@@ -257,3 +257,19 @@ header {
 .section4Part2_2 {
     width: 50%;
 }
+
+.aboutImg img{
+    width: 100%;
+}
+
+.aboutSection1 {
+    padding: 50px 0px 50px 0px;
+}
+
+.aboutSection1Header {
+    padding: 20px 0px 20px 0px;
+}
+
+.aboutSection1Content {
+    padding: 20px 0px 20px 0px;
+}
