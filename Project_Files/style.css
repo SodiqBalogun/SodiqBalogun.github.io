@@ -287,27 +287,45 @@ header {
     width: 50%;
 }
 
+.reservationButton {
+    width: 100%;
+}
+
 .reservationButton a {
     text-decoration: none;
 }
 
-.reservationButton h1 {
+.reservationButton h2 {
     color: white;
+    background: green;
     border: 3px solid white;
-    padding: 10px 10px 10px 50px;
+    padding: 10px 10px 10px 40px;
     font-size: 50px;
     width: 55%;
     height: 55%;
     transition:
-            color 0.5s,
-            background-color 0.5s;
+            color 0.3s,
+            background-color 0.3s;
 }
 
-.reservationButton h1 :hover {
+.reservationButton h2:hover {
     background: white;
-    color: #808080FF;
+    color: green;
+    border: 3px solid green;
 }
 
 .reservationSection1Part2_2 img {
     width: 100%;
+}
+
+.reservationSection2 {
+    display: flex;
+}
+
+.reservationSection2Part1_2 {
+    width: 50%;
+}
+
+.reservationSection2Part2_2 {
+    width: 50%;
 }
