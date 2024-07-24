@@ -314,10 +314,6 @@ header {
     border: 3px solid green;
 }
 
-.reservationSection1Part2_2 img {
-    width: 100%;
-}
-
 .reservationSection2 {
     display: flex;
 }
@@ -326,6 +322,16 @@ header {
     width: 50%;
 }
 
+.reservationSection2Part1_2 img {
+    height: 100%;
+}
+
 .reservationSection2Part2_2 {
     width: 50%;
+    background: #DEE9D3;
+}
+
+.reservationSection1Part2_2 img {
+    width: 100%;
+    height: 100%;
 }
