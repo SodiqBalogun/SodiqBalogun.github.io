@@ -370,7 +370,71 @@ header {
     font-size: 30px;
 }
 
-.mtgSection2 {
+.mtgSection2Part1_3 {
     background: white;
+    padding: 30px 0px 0px 170px;
+    display: flex;
 }
 
+.mtgSection2Header {
+    padding: 30px 0px 50px 170px;
+}
+
+.mtgSection2Header h1{
+    color: black;
+}
+
+.parkSlope {
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+}
+
+.parkSlope a {
+    text-decoration: none;
+}
+
+.mtgSection2Monday {
+    width: 50%;
+    height: 100%;
+}
+
+.parkSlope h2 {
+    color: white;
+    background: black;
+    border: 3px solid white;
+    padding: 10px 15px 10px 30px;
+    font-size: 15px;
+    width: 14%;
+    height: 33%;
+    transition:
+            color 0.3s,
+            background-color 0.3s;
+}
+
+.parkSlope h2:hover {
+    background: white;
+    color: black;
+    border: 3px solid black;
+}
+
+.mtgSection2Tuesday {
+    width: 50%;
+    height: 100%;
+}
+
+.mtgSection2Part2_3 {
+    background: #DEE9D3;
+    padding: 30px 0px 0px 170px;
+    display: flex;
+}
+
+.mtgSection2Wednesday {
+    width: 50%;
+    height: 100%;
+}
+
+.mtgSection2Thursday {
+    width: 50%;
+    height: 100%;
+}
