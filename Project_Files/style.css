@@ -503,3 +503,34 @@ header {
     height: 100%;
     width: 100%;
 }
+
+
+.menuItems1_2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuItems1_2 h2 {
+    color: midnightblue;
+}
+
+.menuItems2_2 {
+    display: grid;
+}
+
+.coffee {
+    background: #DEE9D3;
+}
+
+.boba {
+    background: #DEE9D3;
+}
+
+.sandwiches {
+    background: #DEE9D3;
+}
+
+.beerWine {
+    background: #DEE9D3;
+}
