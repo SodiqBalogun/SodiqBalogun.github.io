@@ -524,28 +524,41 @@ header {
     /*height: 500px;*/
     padding: 50px 0px 0px 0px;
     margin: 0px;
+    height: 100%;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    padding: 0px 40px 0px 40px;
 }
 
 .coffeeBothSections {
     display: flex;
-    height: 87%;
+    height: 88%;
     width: 100%;
+    padding: 50px 0px 0px 0px;
 }
 
 .coffeeSection1_2 {
     width: 50%;
     height: 100%;
-    padding: 0px 0px 0px 170px;
+    padding: 25px 25px 25px 170px;
+    border-right: 3px solid white;
 }
 
 .coffeeSection2_2 {
     width: 50%;
     height: 100%;
-    padding: 0px 0px 0px 50px;
+    padding: 25px;
+    border-left: 3px solid white;
 }
 
 .coffeeSection2_2 img{
-    height: 100%;
+    width: 100%;
 }
 
 .specialDrinks {
