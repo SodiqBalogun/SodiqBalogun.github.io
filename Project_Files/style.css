@@ -521,16 +521,39 @@ header {
 
 .coffee {
     background: #DEE9D3;
+    height: 500px;
+    padding: 50px 0px 0px 0px;
+}
+
+.specialDrinks {
+    height: 500px;
+    padding: 50px 0px 0px 0px;
 }
 
 .boba {
     background: #DEE9D3;
+    height: 500px;
+    padding: 50px 0px 0px 0px;
+}
+
+.hotBites {
+    height: 500px;
+    padding: 50px 0px 0px 0px;
 }
 
 .sandwiches {
     background: #DEE9D3;
+    height: 500px;
+    padding: 50px 0px 0px 0px;
+}
+
+.seasonMenu {
+    height: 500px;
+    padding: 50px 0px 0px 0px;
 }
 
 .beerWine {
     background: #DEE9D3;
+    height: 500px;
+    padding: 50px 0px 0px 0px;
 }

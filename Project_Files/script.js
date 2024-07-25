@@ -46,3 +46,10 @@ function myFunction() {
 updateSticky();
 sticky = header.offsetTop;
 placeholder.style.height = `${header.offsetHeight}px`;
+
+// Scrolling page
+function scrollToElement(pageElement) {
+    document.getElementById(`${pageElement}`).scrollIntoView({
+        behavior: "smooth"
+    });
+}
