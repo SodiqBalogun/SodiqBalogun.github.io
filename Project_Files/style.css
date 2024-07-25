@@ -497,3 +497,9 @@ header {
     color: black;
     border: 3px solid black;
 }
+
+.menuSection1 {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
