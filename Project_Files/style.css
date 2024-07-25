@@ -376,6 +376,10 @@ header {
     display: flex;
 }
 
+.mtgSection2Part1_3 h3 {
+    font-size: 25px;
+}
+
 .mtgSection2Header {
     padding: 30px 0px 50px 170px;
 }
@@ -421,12 +425,17 @@ header {
 .mtgSection2Tuesday {
     width: 50%;
     height: 100%;
+    padding: 0px 0px 0px 170px;
 }
 
 .mtgSection2Part2_3 {
     background: #DEE9D3;
     padding: 30px 0px 0px 170px;
     display: flex;
+}
+
+.mtgSection2Part2_3 h3 {
+    font-size: 25px;
 }
 
 .mtgSection2Wednesday {
@@ -437,4 +446,27 @@ header {
 .mtgSection2Thursday {
     width: 50%;
     height: 100%;
+    padding: 0px 0px 0px 170px;
 }
+
+.mtgSection2Part3_3 {
+    display: flex;
+    background: white;
+    padding: 30px 0px 0px 170px;
+}
+
+.mtgSection2Part3_3 h3 {
+    font-size: 25px;
+}
+
+.mtgSection2Friday {
+    width: 50%;
+    height: 100%;
+}
+
+.mtgSection2Saturday {
+    width: 50%;
+    height: 100%;
+    padding: 0px 0px 0px 170px;
+}
+
