@@ -498,13 +498,20 @@ header {
     border: 3px solid black;
 }
 
+.menuSection1 a {
+    text-decoration: none;
+}
+
+.menuSection1 a:hover {
+    background: #DEE9D3;
+}
+
 .menuSection1 {
     display: grid;
     height: 100%;
     width: 100%;
     background: #ececec;
 }
-
 
 .menuItems1_2 {
     width: 100%;
@@ -524,7 +531,7 @@ header {
     background: #DEE9D3;
     /*height: 500px;*/
     padding: 50px 0px 0px 0px;
-    margin: 0px;
+    margin: 50px 0px 0px 0px;
     height: 100%;
 }
 
