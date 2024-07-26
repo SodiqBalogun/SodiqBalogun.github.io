@@ -59,17 +59,25 @@ const coffeeArr = ["Latte", "Cappuccino", "Cortado", "Mocha", "Drip Coffee", "Re
 const coffeePriceArr = ["$4.75 (Hot) | $5.25 (Cold)", "$4.50 (Hot)", "$4.25 (Hot) | $4.75 (Cold)", "$5.75 (Hot) | $6.25 (Cold)",
     "Small: $3.00 (Hot) | $3.50 (Cold)" + "<br>" +"Medium: $3.50 (Hot)" + "<br>" +"Large: $4.00 (Hot) | $4.25 (Cold)", "$4.50 (Hot) | $4.75 (Cold)",
     "$3.25 (Hot)", "$3.75 (Hot) | $4.25 (Cold)"];
+const coffeeImgArr = ["Images/SipNPlayLatteImage.webp", "Images/SipNPlayCappucino.jpeg", "Images/SipNPlayCortado.jpg",
+    "Images/SipNPlayMochaImg.jpg", "Images/SipNPlayDripCoffee.webp", "Images/SipNPlayRedEyeCoffee.webp",
+    "Images/SipNPlayCafeAuLait.jpg", "Images/SipNPlayAmericano2.webp"];
 let current = document.getElementById("content");
 let currentIndex = 0;
 let currentCoffee = document.getElementById("currentCoffee");
-let currentCoffeePrice = document.getElementById("currentCoffeeInfo")
+let currentCoffeePrice = document.getElementById("currentCoffeeInfo");
+let currentImg = document.getElementById("currentCoffeeImg");
+
 let leftIndex = coffeeArr.length - 1;
 let rightIndex = 1;
 let leftButton = document.getElementById("slideLeft");
 let rightButton = document.getElementById("slideRight");
+
 current.innerHTML = coffeeArr[currentIndex];
 currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
 currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
+currentImg.src = coffeeImgArr[currentIndex];
+
 leftButton.innerHTML = coffeeArr[leftIndex];
 rightButton.innerHTML = coffeeArr[rightIndex];
 
@@ -89,6 +97,7 @@ function scrollCoffeesRight() {
         current.innerHTML = coffeeArr[currentIndex];
         currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
         currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
+        currentImg.src = coffeeImgArr[currentIndex];
         leftButton.innerHTML = coffeeArr[leftIndex];
         rightButton.innerHTML = coffeeArr[rightIndex];
     } else
@@ -99,6 +108,7 @@ function scrollCoffeesRight() {
         current.innerHTML = coffeeArr[currentIndex];
         currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
         currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
+        currentImg.src = coffeeImgArr[currentIndex];
         leftButton.innerHTML = coffeeArr[leftIndex];
         rightButton.innerHTML = coffeeArr[rightIndex];
     }
@@ -120,6 +130,7 @@ function scrollCoffeesLeft() {
         current.innerHTML = coffeeArr[currentIndex];
         currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
         currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
+        currentImg.src = coffeeImgArr[currentIndex];
         leftButton.innerHTML = coffeeArr[leftIndex];
         rightButton.innerHTML = coffeeArr[rightIndex];
     } else
@@ -130,6 +141,7 @@ function scrollCoffeesLeft() {
         current.innerHTML = coffeeArr[currentIndex];
         currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
         currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
+        currentImg.src = coffeeImgArr[currentIndex];
         leftButton.innerHTML = coffeeArr[leftIndex];
         rightButton.innerHTML = coffeeArr[rightIndex];
     }

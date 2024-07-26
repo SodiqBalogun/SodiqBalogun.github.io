@@ -502,6 +502,7 @@ header {
     display: grid;
     height: 100%;
     width: 100%;
+    background: #ececec;
 }
 
 
@@ -544,7 +545,7 @@ header {
 }
 
 .coffeeSection1_2 {
-    width: 50%;
+    width: 40%;
     height: 100%;
     padding: 25px 25px 25px 170px;
     border-right: 3px solid white;
@@ -564,6 +565,7 @@ header {
 .specialDrinks {
     height: 500px;
     padding: 50px 0px 0px 0px;
+    background: white;
 }
 
 .boba {
@@ -575,6 +577,7 @@ header {
 .hotBites {
     height: 500px;
     padding: 50px 0px 0px 0px;
+    background: white;
 }
 
 .sandwiches {
@@ -586,6 +589,7 @@ header {
 .seasonMenu {
     height: 500px;
     padding: 50px 0px 0px 0px;
+    background: white;
 }
 
 .beerWine {
