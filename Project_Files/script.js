@@ -56,13 +56,20 @@ function scrollToElement(pageElement) {
 
 // Scrolling Coffee
 const coffeeArr = ["Latte", "Cappuccino", "Cortado", "Mocha", "Drip Coffee", "Red Eye", "Cafe Au Lait", "Americano"];
+const coffeePriceArr = ["$4.75 (Hot) | $5.25 (Cold)", "$4.50 (Hot)", "$4.25 (Hot) | $4.75 (Cold)", "$5.75 (Hot) | $6.25 (Cold)",
+    "Small: $3.00 (Hot) | $3.50 (Cold)" + "<br>" +"Medium: $3.50 (Hot)" + "<br>" +"Large: $4.00 (Hot) | $4.25 (Cold)", "$4.50 (Hot) | $4.75 (Cold)",
+    "$3.25 (Hot)", "$3.75 (Hot) | $4.25 (Cold)"];
 let current = document.getElementById("content");
 let currentIndex = 0;
+let currentCoffee = document.getElementById("currentCoffee");
+let currentCoffeePrice = document.getElementById("currentCoffeeInfo")
 let leftIndex = coffeeArr.length - 1;
 let rightIndex = 1;
 let leftButton = document.getElementById("slideLeft");
 let rightButton = document.getElementById("slideRight");
 current.innerHTML = coffeeArr[currentIndex];
+currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
+currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
 leftButton.innerHTML = coffeeArr[leftIndex];
 rightButton.innerHTML = coffeeArr[rightIndex];
 
@@ -80,6 +87,8 @@ function scrollCoffeesRight() {
             rightIndex++;
         }
         current.innerHTML = coffeeArr[currentIndex];
+        currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
+        currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
         leftButton.innerHTML = coffeeArr[leftIndex];
         rightButton.innerHTML = coffeeArr[rightIndex];
     } else
@@ -88,6 +97,8 @@ function scrollCoffeesRight() {
         leftIndex++;
         rightIndex++;
         current.innerHTML = coffeeArr[currentIndex];
+        currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
+        currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
         leftButton.innerHTML = coffeeArr[leftIndex];
         rightButton.innerHTML = coffeeArr[rightIndex];
     }
@@ -107,6 +118,8 @@ function scrollCoffeesLeft() {
             rightIndex--;
         }
         current.innerHTML = coffeeArr[currentIndex];
+        currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
+        currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
         leftButton.innerHTML = coffeeArr[leftIndex];
         rightButton.innerHTML = coffeeArr[rightIndex];
     } else
@@ -115,6 +128,8 @@ function scrollCoffeesLeft() {
         leftIndex--;
         rightIndex--;
         current.innerHTML = coffeeArr[currentIndex];
+        currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
+        currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
         leftButton.innerHTML = coffeeArr[leftIndex];
         rightButton.innerHTML = coffeeArr[rightIndex];
     }
