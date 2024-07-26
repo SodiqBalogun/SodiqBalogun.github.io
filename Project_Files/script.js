@@ -82,13 +82,40 @@ function scrollCoffeesRight() {
         current.innerHTML = coffeeArr[currentIndex];
         leftButton.innerHTML = coffeeArr[leftIndex];
         rightButton.innerHTML = coffeeArr[rightIndex];
-    }
+    } else
     if (currentIndex === coffeeArr.length - 1) {
+        currentIndex = 0;
+        leftIndex++;
+        rightIndex++;
         current.innerHTML = coffeeArr[currentIndex];
         leftButton.innerHTML = coffeeArr[leftIndex];
         rightButton.innerHTML = coffeeArr[rightIndex];
-        currentIndex = 0;
-        leftIndex = coffeeArr.length - 1;
-        rightIndex = 1;
+    }
+}
+
+function scrollCoffeesLeft() {
+    if (currentIndex !== 0) {
+        currentIndex--;
+        if (leftIndex === 0) {
+            leftIndex = coffeeArr.length - 1;
+        } else {
+            leftIndex--;
+        }
+        if (rightIndex === 0) {
+            rightIndex =  coffeeArr.length - 1;
+        } else {
+            rightIndex--;
+        }
+        current.innerHTML = coffeeArr[currentIndex];
+        leftButton.innerHTML = coffeeArr[leftIndex];
+        rightButton.innerHTML = coffeeArr[rightIndex];
+    } else
+    if (currentIndex === 0) {
+        currentIndex = coffeeArr.length - 1;
+        leftIndex--;
+        rightIndex--;
+        current.innerHTML = coffeeArr[currentIndex];
+        leftButton.innerHTML = coffeeArr[leftIndex];
+        rightButton.innerHTML = coffeeArr[rightIndex];
     }
 }
