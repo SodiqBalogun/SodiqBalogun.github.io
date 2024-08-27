@@ -151,5 +151,5 @@ function scrollCoffeesLeft() {
 
 //Implementing functionality for the drop-down list
 function updateCoffeeSelect() {
-
+    current.innerHTML = coffeeArr[coffeeSelect.value];
 }
