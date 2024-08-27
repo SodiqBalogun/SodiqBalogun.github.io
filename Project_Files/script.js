@@ -97,6 +97,9 @@ function scrollCoffeesRight() {
             rightIndex++;
         }
         current.innerHTML = coffeeArr[currentIndex];
+
+        /*test*/coffeeSelect.value = currentIndex;
+
         currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
         currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
         currentImg.src = coffeeImgArr[currentIndex];
@@ -108,6 +111,9 @@ function scrollCoffeesRight() {
         leftIndex++;
         rightIndex++;
         current.innerHTML = coffeeArr[currentIndex];
+
+        /*test*/coffeeSelect.value = currentIndex;
+
         currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
         currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
         currentImg.src = coffeeImgArr[currentIndex];
@@ -130,6 +136,9 @@ function scrollCoffeesLeft() {
             rightIndex--;
         }
         current.innerHTML = coffeeArr[currentIndex];
+
+        /*test*/coffeeSelect.value = currentIndex;
+
         currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
         currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
         currentImg.src = coffeeImgArr[currentIndex];
@@ -141,6 +150,9 @@ function scrollCoffeesLeft() {
         leftIndex--;
         rightIndex--;
         current.innerHTML = coffeeArr[currentIndex];
+
+        /*test*/coffeeSelect.value = currentIndex;
+
         currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
         currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
         currentImg.src = coffeeImgArr[currentIndex];
@@ -151,5 +163,10 @@ function scrollCoffeesLeft() {
 
 //Implementing functionality for the drop-down list
 function updateCoffeeSelect() {
-    current.innerHTML = coffeeArr[coffeeSelect.value];
+    currentIndex = coffeeSelect.value;
+    if (currentIndex === 0) {
+
+    }
+    current.innerHTML = coffeeArr[currentIndex];
+
 }
