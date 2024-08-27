@@ -96,30 +96,19 @@ function scrollCoffeesRight() {
         } else {
             rightIndex++;
         }
-        current.innerHTML = coffeeArr[currentIndex];
-
-        /*test*/coffeeSelect.value = currentIndex;
-
-        currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
-        currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
-        currentImg.src = coffeeImgArr[currentIndex];
-        leftButton.innerHTML = coffeeArr[leftIndex];
-        rightButton.innerHTML = coffeeArr[rightIndex];
     } else
     if (currentIndex === coffeeArr.length - 1) {
         currentIndex = 0;
         leftIndex++;
         rightIndex++;
-        current.innerHTML = coffeeArr[currentIndex];
-
-        /*test*/coffeeSelect.value = currentIndex;
-
-        currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
-        currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
-        currentImg.src = coffeeImgArr[currentIndex];
-        leftButton.innerHTML = coffeeArr[leftIndex];
-        rightButton.innerHTML = coffeeArr[rightIndex];
     }
+    current.innerHTML = coffeeArr[currentIndex];
+    /*NEW*/coffeeSelect.value = currentIndex;
+    currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
+    currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
+    currentImg.src = coffeeImgArr[currentIndex];
+    leftButton.innerHTML = coffeeArr[leftIndex];
+    rightButton.innerHTML = coffeeArr[rightIndex];
 }
 
 function scrollCoffeesLeft() {
@@ -135,38 +124,38 @@ function scrollCoffeesLeft() {
         } else {
             rightIndex--;
         }
-        current.innerHTML = coffeeArr[currentIndex];
-
-        /*test*/coffeeSelect.value = currentIndex;
-
-        currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
-        currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
-        currentImg.src = coffeeImgArr[currentIndex];
-        leftButton.innerHTML = coffeeArr[leftIndex];
-        rightButton.innerHTML = coffeeArr[rightIndex];
     } else
     if (currentIndex === 0) {
         currentIndex = coffeeArr.length - 1;
         leftIndex--;
         rightIndex--;
-        current.innerHTML = coffeeArr[currentIndex];
-
-        /*test*/coffeeSelect.value = currentIndex;
-
-        currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
-        currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
-        currentImg.src = coffeeImgArr[currentIndex];
-        leftButton.innerHTML = coffeeArr[leftIndex];
-        rightButton.innerHTML = coffeeArr[rightIndex];
     }
+    current.innerHTML = coffeeArr[currentIndex];
+    /*new*/coffeeSelect.value = currentIndex;
+    currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
+    currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
+    currentImg.src = coffeeImgArr[currentIndex];
+    leftButton.innerHTML = coffeeArr[leftIndex];
+    rightButton.innerHTML = coffeeArr[rightIndex];
 }
 
 //Implementing functionality for the drop-down list
 function updateCoffeeSelect() {
     currentIndex = coffeeSelect.value;
-    if (currentIndex === 0) {
-
+    if (currentIndex > 0 && currentIndex < coffeeArr.length - 1) {
+        leftIndex = currentIndex - 1;
+        rightIndex = currentIndex + 1;
+    } else if (currentIndex === 0) {
+        leftIndex = coffeeArr.length - 1;
+        rightIndex = 1;
+    } else if (currentIndex === coffeeArr.length - 1) {
+        leftIndex = coffeeArr.length - 2;
+        rightIndex = 0;
     }
-    current.innerHTML = coffeeArr[currentIndex];
-
+    current.innerHTML = currentIndex;
+    currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
+    currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
+    currentImg.src = coffeeImgArr[currentIndex];
+    leftButton.innerHTML = leftIndex;
+    rightButton.innerHTML = rightIndex;
 }
