@@ -73,6 +73,8 @@ let rightIndex = 1;
 let leftButton = document.getElementById("slideLeft");
 let rightButton = document.getElementById("slideRight");
 
+let coffeeSelect = document.getElementById("content2");
+
 current.innerHTML = coffeeArr[currentIndex];
 currentCoffee.innerHTML = coffeeArr[currentIndex].toUpperCase();
 currentCoffeePrice.innerHTML = coffeePriceArr[currentIndex];
@@ -145,4 +147,9 @@ function scrollCoffeesLeft() {
         leftButton.innerHTML = coffeeArr[leftIndex];
         rightButton.innerHTML = coffeeArr[rightIndex];
     }
+}
+
+//Implementing functionality for the drop-down list
+function updateCoffeeSelect() {
+
 }
